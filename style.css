@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    font-family: monospace;
+
+    padding: 25.2px 0px;
+}
+
+header::before {
+    content: "";
+    background-color: #2981c8;
+    position: absolute;
+    z-index: -1;
+    height: 14%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.box {
+    background-color:#b2ebf294;
+    display: flex;
+
+    flex-direction: column;
+    margin: 11px auto;
+    width: 24%;
+    height: 225px;
+    /* border: 2px solid rgb(109, 215, 242); */
+    box-shadow: 2px 2px 12px black;
+    border-radius: 40px;
+    text-align: center;
+
+
+}
+
+h3 {
+    padding: 10px;
+}
+body::before{
+    content: '';
+    background:url('bj.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -3;
+    height: 100%; 
+     width : 100%;
+     opacity: 11.6;
+    
+}
+.inp{
+    margin: 12px auto;
+
+}
+.btn
+{
+    margin: 12px auto;
+}
+#hr{
+border: 2px solid black;
+}
