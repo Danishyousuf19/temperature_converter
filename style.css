@@ -2,33 +2,35 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 header {
     text-align: center;
     font-weight: bolder;
     font-size: 1.6rem;
     font-family: monospace;
-
+    background-color: #2981c8;
     padding: 25.2px 0px;
 }
 
-header::before {
+/* header::before {
     content: "";
     background-color: #2981c8;
     position: absolute;
     z-index: -1;
-    height: 14%;
+    height: 83px;
     width: 100%;
     left: 0;
     top: 0;
     opacity: .8;
-}
+} */
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 25px;
 
 }
 
@@ -38,8 +40,8 @@ header::before {
 
     flex-direction: column;
     margin: 11px auto;
-    width: 24%;
-    height: 225px;
+    width: 19rem;
+    height: 270px;
     /* border: 2px solid rgb(109, 215, 242); */
     box-shadow: 2px 2px 12px black;
     border-radius: 40px;
@@ -49,26 +51,64 @@ header::before {
 }
 
 h3 {
+    font-family: system-ui;
     padding: 10px;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 body::before{
     content: '';
     background:url('bj.jpg') no-repeat center center/cover;
     position: absolute;
     z-index: -3;
-    height: 100%; 
+    height: 46pc; 
      width : 100%;
      opacity: 11.6;
     
 }
 .inp{
-    margin: 12px auto;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 45px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px darkturquoise;
 
 }
 .btn
 {
     margin: 12px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px grey;
+    padding: 2px;
+    border: 2px solid white;
+}
+.btn:hover{
+cursor: pointer;
+background-color: black;
+color: white;
+border-color: black;
 }
 #hr{
 border: 2px solid black;
+}
+#hd{
+    animation-name: clr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+transition: all;
+transition-timing-function: ease-in-out;
+}
+@keyframes clr {
+    0%{
+        color: rgb(255, 136, 0);
+       
+    }
+    50%{
+        color:rgb(255, 195, 83);
+       
+    }
+    100%{
+        color: rgb(255, 136, 0);
+       
+    }
+    
 }
