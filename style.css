@@ -10,8 +10,11 @@ header {
     font-weight: bolder;
     font-size: 1.6rem;
     font-family: monospace;
-    background-color: #2981c8;
+    background-color: #2981c8d4;
     padding: 25.2px 0px;
+   text-shadow:  0px 0px 10px floralwhite;
+   
+
 }
 
 /* header::before {
@@ -35,7 +38,7 @@ header {
 }
 
 .box {
-    background-color:#b2ebf294;
+    background-color:#b2ebf221;
     display: flex;
 
     flex-direction: column;
@@ -46,6 +49,7 @@ header {
     box-shadow: 2px 2px 12px black;
     border-radius: 40px;
     text-align: center;
+    backdrop-filter: blur(4px);
 
 
 }
@@ -61,8 +65,9 @@ body::before{
     position: absolute;
     z-index: -3;
     height: 48pc; 
-    width : 100%;
+     width : 100%;
      opacity: 11.6;
+    
     
 }
 .inp{
@@ -88,7 +93,7 @@ color: white;
 border-color: black;
 }
 #hr{
-border: 2px solid black;
+    border: 1px solid #00ACC1;
 }
 #hd{
     animation-name: clr;
@@ -99,16 +104,26 @@ transition-timing-function: ease-in-out;
 }
 @keyframes clr {
     0%{
-        color: rgb(255, 136, 0);
+        color: rgb(208, 111, 0);
        
     }
     50%{
-        color:rgb(255, 195, 83);
+        color:rgb(255, 233, 192);
        
     }
     100%{
-        color: rgb(255, 136, 0);
+        color: rgb(208, 111, 0);
        
     }
     
+}
+
+h5{
+    text-align: center;
+    color: white;
+    text-shadow: none;
+    background: #37474F;
+    padding: 13px;
+    position: relative;
+    bottom: -44px;
 }
